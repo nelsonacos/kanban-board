@@ -1,8 +1,7 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { useQuery } from '@tanstack/react-query'
-import { fecthData } from './services/fetchData'
-import { Tasks } from './vite-env'
+import Container from '@mui/material/Container';
+import { Board } from './task'
 import './App.css'
 
 const theme = createTheme({
@@ -12,18 +11,13 @@ const theme = createTheme({
 });
 
 function App() {
-  const { isLoading, isError, error, data: tasks } = useQuery<Tasks>({
-    queryKey: ['tasks'],
-    queryFn: async () => fecthData('http://localhost:3000/tasks')
-  })
-
-  if (isLoading) return <div>loading...</div>
-  if (isError) return <div>{`Oops ocurrio un error: ${error.message}`}</div>
   return (
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <pre>{JSON.stringify(tasks, null, 2)}</pre>
+        <Container maxWidth="lg" sx={{ width: '80%', margin: '100px auto' }}>
+          <Board />
+        </Container>
       </ThemeProvider>
     </>
   )

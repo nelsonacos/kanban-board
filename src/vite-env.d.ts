@@ -1,17 +1,20 @@
 /// <reference types="vite/client" />
 
-export type TaskStatus = 'todo' | 'onProgress' | 'inReview' | 'completed';
+export type Status = 'todo' | 'on progress' | 'in review' | 'completed';
+
+export type TaskStatus = {
+    id: string,
+    status: Status 
+}
 export type TaskPriority = 'low' | 'medium' | 'high';
 
-export interface Tasks {
-    tasks: Task[];
-}
+export type Tasks = Task[];
 
 export interface Task {
   id: string;
   title: string;
   description: string;
-  status: TaskStatus;
+  status: Status;
   priority: TaskPriority;
   createdAt: Date;
   updatedAt: Date;

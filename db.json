@@ -31,7 +31,7 @@
             "id": "4",
             "title": "Diseñar UI del Kanban",
             "description": "Crear los wireframes y diseño visual del tablero",
-            "status": "onProgress",
+            "status": "on progress",
             "priority": "medium",
             "createdAt": "2025-03-01",
             "updatedAt": "2025-03-02"
@@ -40,7 +40,7 @@
             "id": "5",
             "title": "Implementar drag and drop",
             "description": "Permitir arrastrar tareas entre columnas",
-            "status": "onProgress",
+            "status": "on progress",
             "priority": "high",
             "createdAt": "2025-03-02",
             "updatedAt": "2025-03-03"
@@ -49,7 +49,7 @@
             "id": "6",
             "title": "Configurar JSON Server",
             "description": "Prototipar API con JSON Server para pruebas",
-            "status": "onProgress",
+            "status": "on progress",
             "priority": "medium",
             "createdAt": "2025-03-02",
             "updatedAt": "2025-03-03"
@@ -58,7 +58,7 @@
             "id": "7",
             "title": "Desarrollar API de tareas",
             "description": "Crear endpoints para gestionar tareas",
-            "status": "inReview",
+            "status": "in review",
             "priority": "high",
             "createdAt": "2025-02-28",
             "updatedAt": "2025-03-02"
@@ -67,7 +67,7 @@
             "id": "8",
             "title": "Agregar validaciones",
             "description": "Validar datos antes de enviar al backend",
-            "status": "inReview",
+            "status": "in review",
             "priority": "medium",
             "createdAt": "2025-02-28",
             "updatedAt": "2025-03-02"
@@ -76,7 +76,7 @@
             "id": "9",
             "title": "Revisión de accesibilidad",
             "description": "Asegurar que el tablero es accesible",
-            "status": "inReview",
+            "status": "in review",
             "priority": "low",
             "createdAt": "2025-02-27",
             "updatedAt": "2025-03-02"
@@ -107,6 +107,24 @@
             "priority": "high",
             "createdAt": "2025-02-26",
             "updatedAt": "2025-02-26"
+        }
+    ],
+    "status": [
+        {
+            "id": "1",
+            "status": "todo"
+        },
+        {
+            "id": "2",
+            "status": "on progress"
+        },
+        {
+            "id": "3",
+            "status": "in review"
+        },
+        {
+            "id": "4",
+            "status": "completed"
         }
     ]
 }
