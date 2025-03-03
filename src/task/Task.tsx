@@ -1,7 +1,8 @@
 import { Card, CardContent, Typography, IconButton, Chip, Box, Divider } from '@mui/material';
 import { Edit, Visibility, Delete } from '@mui/icons-material';
 import { formatDistanceToNow } from 'date-fns';
-import { es } from 'date-fns/locale';
+import { enUS } from 'date-fns/locale';
+import { useTasks } from '.'
 import { Task } from '../vite-env';
 
 export const TaskItem = ({ task }: { task: Task }) => {
@@ -11,7 +12,8 @@ export const TaskItem = ({ task }: { task: Task }) => {
         high: "error"
     };
 
-    const formattedDate = formatDistanceToNow(new Date(task.updatedAt), { addSuffix: true, locale: es });
+    const formattedDate = formatDistanceToNow(new Date(task.updatedAt), { addSuffix: true, locale: enUS });
+    const { handleOpenEdit, deleteTaskMutation } = useTasks()
 
     return (
         <Card variant="outlined" sx={{ mb: 1, p: 0 }}>
@@ -41,13 +43,13 @@ export const TaskItem = ({ task }: { task: Task }) => {
             <Divider />
 
             <Box sx={{ display: 'flex', justifyContent: 'flex-end', p: 0.5, backgroundColor: '#fafafa' }}>
-                <IconButton sx={{ m: -0.4 }} color="primary">
+                <IconButton disabled sx={{ m: -0.4 }} color="primary">
                     <Visibility />
                 </IconButton>
-                <IconButton sx={{ m: -0.4 }} color="warning">
+                <IconButton onClick={() => { handleOpenEdit(task) }} sx={{ m: -0.4 }} color="warning">
                     <Edit />
                 </IconButton>
-                <IconButton sx={{ m: -0.4 }} color="error">
+                <IconButton onClick={() => { deleteTaskMutation.mutate(task.id) }} sx={{ m: -0.4 }} color="error">
                     <Delete />
                 </IconButton>
             </Box>

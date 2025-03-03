@@ -1,13 +1,13 @@
 import { Grid2 } from '@mui/material';
 import { useQuery } from '@tanstack/react-query'
-import { fecthData } from '../services/fetchData'
+import { fetchData } from '../services/fetchData'
 import { TaskStatus } from '../vite-env'
 import { Column } from '.'
 
 export const Board = () => {
     const { isLoading, isError, data: status } = useQuery({
         queryKey: ['status'],
-        queryFn: async () => await fecthData('http://localhost:3000/status')
+        queryFn: async () => await fetchData('http://localhost:3000/status')
     })
     if (isLoading) return <div>loading...</div>
     if (isError) return <div>Oops OCURRIO UN ERROR</div>
