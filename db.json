@@ -1,130 +1,133 @@
 {
-    "tasks": [
-        {
-            "id": "1",
-            "title": "Configurar repositorio",
-            "description": "Inicializar repositorio en GitHub y configurar ramas",
-            "status": "todo",
-            "priority": "high",
-            "createdAt": "2025-03-01",
-            "updatedAt": "2025-03-01"
-        },
-        {
-            "id": "2",
-            "title": "Configurar CI/CD",
-            "description": "Configurar GitHub Actions para despliegues automáticos",
-            "status": "todo",
-            "priority": "high",
-            "createdAt": "2025-03-02",
-            "updatedAt": "2025-03-02"
-        },
-        {
-            "id": "3",
-            "title": "Definir estructura del proyecto",
-            "description": "Organizar carpetas y definir convenciones",
-            "status": "todo",
-            "priority": "medium",
-            "createdAt": "2025-03-02",
-            "updatedAt": "2025-03-02"
-        },
-        {
-            "id": "4",
-            "title": "Diseñar UI del Kanban",
-            "description": "Crear los wireframes y diseño visual del tablero",
-            "status": "on progress",
-            "priority": "medium",
-            "createdAt": "2025-03-01",
-            "updatedAt": "2025-03-02"
-        },
-        {
-            "id": "5",
-            "title": "Implementar drag and drop",
-            "description": "Permitir arrastrar tareas entre columnas",
-            "status": "on progress",
-            "priority": "high",
-            "createdAt": "2025-03-02",
-            "updatedAt": "2025-03-03"
-        },
-        {
-            "id": "6",
-            "title": "Configurar JSON Server",
-            "description": "Prototipar API con JSON Server para pruebas",
-            "status": "on progress",
-            "priority": "medium",
-            "createdAt": "2025-03-02",
-            "updatedAt": "2025-03-03"
-        },
-        {
-            "id": "7",
-            "title": "Desarrollar API de tareas",
-            "description": "Crear endpoints para gestionar tareas",
-            "status": "in review",
-            "priority": "high",
-            "createdAt": "2025-02-28",
-            "updatedAt": "2025-03-02"
-        },
-        {
-            "id": "8",
-            "title": "Agregar validaciones",
-            "description": "Validar datos antes de enviar al backend",
-            "status": "in review",
-            "priority": "medium",
-            "createdAt": "2025-02-28",
-            "updatedAt": "2025-03-02"
-        },
-        {
-            "id": "9",
-            "title": "Revisión de accesibilidad",
-            "description": "Asegurar que el tablero es accesible",
-            "status": "in review",
-            "priority": "low",
-            "createdAt": "2025-02-27",
-            "updatedAt": "2025-03-02"
-        },
-        {
-            "id": "10",
-            "title": "Inicializar proyecto en Vite",
-            "description": "Crear proyecto base con Vite y TypeScript",
-            "status": "completed",
-            "priority": "high",
-            "createdAt": "2025-02-26",
-            "updatedAt": "2025-02-26"
-        },
-        {
-            "id": "11",
-            "title": "Configurar Tailwind CSS",
-            "description": "Añadir y configurar Tailwind CSS",
-            "status": "completed",
-            "priority": "medium",
-            "createdAt": "2025-02-26",
-            "updatedAt": "2025-02-26"
-        },
-        {
-            "id": "12",
-            "title": "Definir tipos en TypeScript",
-            "description": "Crear interfaces y tipos iniciales",
-            "status": "completed",
-            "priority": "high",
-            "createdAt": "2025-02-26",
-            "updatedAt": "2025-02-26"
-        }
-    ],
-    "status": [
-        {
-            "id": "1",
-            "status": "todo"
-        },
-        {
-            "id": "2",
-            "status": "on progress"
-        },
-        {
-            "id": "3",
-            "status": "in review"
-        },
-        {
-            "id": "4",
-            "status": "completed"
-        }
-    ]
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Configurar repositorio",
+      "description": "Inicializar repositorio en GitHub y configurar ramas",
+      "status": "todo",
+      "priority": "high",
+      "createdAt": "2025-03-01",
+      "updatedAt": "2025-03-01"
+    },
+    {
+      "id": "2",
+      "title": "Configurar CI/CD",
+      "description": "Configurar GitHub Actions para despliegues automáticos",
+      "status": "todo",
+      "priority": "high",
+      "createdAt": "2025-03-02",
+      "updatedAt": "2025-03-02"
+    },
+    {
+      "id": "3",
+      "title": "Definir estructura del proyecto",
+      "description": "Organizar carpetas y definir convenciones",
+      "status": "todo",
+      "priority": "medium",
+      "createdAt": "2025-03-02",
+      "updatedAt": "2025-03-02"
+    },
+    {
+      "id": "4",
+      "title": "Diseñar UI del Kanban",
+      "description": "Crear los wireframes y diseño visual del tablero",
+      "status": "on progress",
+      "priority": "medium",
+      "createdAt": "2025-03-01",
+      "updatedAt": "2025-03-02"
+    },
+    {
+      "id": "5",
+      "title": "Implementar drag and drop",
+      "description": "Permitir arrastrar tareas entre columnas",
+      "status": "on progress",
+      "priority": "high",
+      "createdAt": "2025-03-02",
+      "updatedAt": "2025-03-03"
+    },
+    {
+      "id": "6",
+      "title": "Configurar JSON Server",
+      "description": "Prototipar API con JSON Server para pruebas",
+      "status": "on progress",
+      "priority": "medium",
+      "createdAt": "2025-03-02",
+      "updatedAt": "2025-03-03"
+    },
+    {
+      "id": "7",
+      "title": "Desarrollar API de tareas",
+      "description": "Crear endpoints para gestionar tareas",
+      "status": "in review",
+      "priority": "high",
+      "createdAt": "2025-02-28",
+      "updatedAt": "2025-03-02"
+    },
+    {
+      "id": "8",
+      "title": "Agregar validaciones",
+      "description": "Validar datos antes de enviar al backend",
+      "status": "in review",
+      "priority": "medium",
+      "createdAt": "2025-02-28",
+      "updatedAt": "2025-03-02"
+    },
+    {
+      "id": "9",
+      "title": "Revisión de accesibilidad",
+      "description": "Asegurar que el tablero es accesible",
+      "status": "in review",
+      "priority": "low",
+      "createdAt": "2025-02-27",
+      "updatedAt": "2025-03-02"
+    },
+    {
+      "id": "10",
+      "title": "Inicializar proyecto en Vite",
+      "description": "Crear proyecto base con Vite y TypeScript",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2025-02-26",
+      "updatedAt": "2025-02-26"
+    },
+    {
+      "id": "11",
+      "title": "Configurar Tailwind CSS",
+      "description": "Añadir y configurar Tailwind CSS",
+      "status": "completed",
+      "priority": "medium",
+      "createdAt": "2025-02-26",
+      "updatedAt": "2025-02-26"
+    },
+    {
+      "id": "12",
+      "title": "Definir tipos en TypeScript",
+      "description": "Crear interfaces y tipos iniciales",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2025-02-26",
+      "updatedAt": "2025-02-26"
+    },
+    {
+      "id": "9fee"
+    }
+  ],
+  "status": [
+    {
+      "id": "1",
+      "status": "todo"
+    },
+    {
+      "id": "2",
+      "status": "on progress"
+    },
+    {
+      "id": "3",
+      "status": "in review"
+    },
+    {
+      "id": "4",
+      "status": "completed"
+    }
+  ]
 }

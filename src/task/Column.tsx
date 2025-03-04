@@ -1,13 +1,13 @@
 import { TaskStatus, Tasks, Task } from '../vite-env';
 import { useQuery } from '@tanstack/react-query';
-import { fecthData } from '../services/fetchData';
+import { fetchData } from '../services/fetchData';
 import { TaskItem } from './';
 import { Grid2, Paper, Typography, Box } from '@mui/material';
 
 export const Column = ({ status }: { status: TaskStatus }) => {
     const { data: tasks } = useQuery<Tasks>({
         queryKey: ['tasks'],
-        queryFn: async () => await fecthData('http://localhost:3000/tasks')
+        queryFn: async () => await fetchData('http://localhost:3000/tasks')
     });
 
     const filteredTasks = tasks ? tasks.filter((task: Task) => task.status === status.status) : [];
