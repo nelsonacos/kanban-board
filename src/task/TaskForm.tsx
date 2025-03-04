@@ -52,7 +52,7 @@ export const TaskForm = ({ open, onClose, initialValues }: TaskFormProps) => {
 
     return (
         <Dialog open={open} onClose={() => onClose(false)} fullWidth maxWidth="sm">
-            <DialogTitle>{initialValues ? "Editar Tarea" : "Nueva Tarea"}</DialogTitle>
+            <DialogTitle>{initialValues ? "Edit Task" : "New Task"}</DialogTitle>
             <form onSubmit={handleSubmit}>
                 <DialogContent sx={{ display: "flex", flexDirection: "column", gap: 2, mt: 1 }}>
                     <TextField
