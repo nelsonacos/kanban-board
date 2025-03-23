@@ -3,7 +3,7 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/nelsonacos/kanban-board.svg?style=for-the-badge)](https://github.com/nelsonacos/kanban-boards/graphs/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/nelsonacos/kanban-board?style=for-the-badge)](https://github.com/nelsonacos/kanban-board/issues)
 [![GitHub forks](https://img.shields.io/github/forks/nelsonacos/kanban-board?style=for-the-badge)](https://github.com/nelsonacos/kanban-board/network)
-[![GitHub stars](https://img.shields.io/github/stars/nelsonacos/kanban-board?style=for-the-badge)](https://github.com/nelsonacos/online-liqueurs-shop/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/nelsonacos/kanban-board?style=for-the-badge)](https://github.com/nelsonacos/kanban-board/stargazers)
 [![GitHub license](https://img.shields.io/github/license/nelsonacos/kanban-boards?style=for-the-badge)](https://github.com/nelsonacos/kanban-board/blob/main/LICENSE)
 [![Linkedin url](https://img.shields.io/badge/-LinkedIn-black.svg?color=%23555555&logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/nelchar/)
 
@@ -56,6 +56,28 @@ npm install npm@latest -g
 
 ### Getting Started
 
+### Starting the Project with Docker Compose
+
+1. Clone the repo
+
+```sh
+git clone https://github.com/nelsonacos/kanban-board.git
+```
+
+2. Open command line and go to project folder 
+
+```bash
+cd kanban-board
+```
+3. Run The Command:
+
+```sh
+docker-compose up --build
+```
+Open http://localhost:5173/ with your browser to see the result.
+
+### Starting the Project without Docker Compose
+
 1. Clone the repo
 
 ```sh
@@ -80,7 +102,7 @@ I am using a small server called [json-server](https://github.com/typicode/json-
 4. First, run the server
 
 ```js
-npm run back
+npm run backend
 ```
 
 5. Then open another command line and run the frontend
